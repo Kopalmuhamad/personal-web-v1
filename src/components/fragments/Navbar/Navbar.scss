@@ -11,7 +11,7 @@
     z-index: 99;
 
     @include respond-to(medium) {
-        height: 180px;
+        height: 140px;
         border-bottom: 2px solid $black;
     }
 
