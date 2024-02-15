@@ -9,6 +9,7 @@
     left: 0;
     padding: 16px 0;
     z-index: 99;
+    backdrop-filter: blur(4px);
 
     @include respond-to(medium) {
         height: 140px;
