@@ -1,0 +1,14 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.container {
+    padding: 0 11px;
+
+    @include respond-to(medium) {
+        padding: 0 35px;
+    }
+
+    @include respond-to(large) {
+        padding: 0 50px;
+    }
+}

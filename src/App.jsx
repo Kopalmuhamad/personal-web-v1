@@ -1,14 +1,22 @@
-import "./App.css";
+import "./App.scss";
 import Navbar from "./components/fragments/Navbar/Navbar";
-import Footer from "./components/fragments/Footer/Footer";
+
+import Layout from "./components/fragments/Layout/Layout";
+
+import splashPink from "./assets/icons/splash-pink.png";
 import Header from "./components/fragments/Header/Header";
+import Services from "./components/fragments/Services/Services";
 
 function App() {
   return (
     <>
+      <img src={splashPink} alt="" className="splash-pink" />
       <Navbar />
-      <Header />
-      <Footer />
+      <Layout>
+        <Header />
+        <Services />
+      </Layout>
+      <img src={splashPink} alt="" className="splash-pink" />
     </>
   );
 }

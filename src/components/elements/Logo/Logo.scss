@@ -1,0 +1,19 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+
+    .logo-image {
+        width: 30px;
+    }
+
+    .logo-text {
+        font-size: $text-xl;
+        font-family: $font-grotesk;
+        color: $black;
+    }
+}

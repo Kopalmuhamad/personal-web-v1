@@ -1,0 +1,80 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+
+.nav-container {
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    padding: 32px 0;
+    z-index: 99;
+
+    @include respond-to(medium) {
+        height: 235px;
+        border-bottom: 2px solid $black;
+    }
+
+    .nav {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        height: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 0 24px;
+        border: 2px solid $black;
+        background-color: $white;
+        box-shadow: 4px 4px 0 $shadow;
+
+        @include respond-to(small) {
+            max-width: 360px;
+        }
+
+        @include respond-to(medium) {
+            max-width: 576px;
+            padding: 0 0 0 24px;
+            margin: 32px auto 0;
+        }
+
+        @include respond-to(large) {
+            max-width: 768px;
+        }
+
+
+
+
+
+        .dot-accent {
+            position: absolute;
+            width: 9.5px;
+            height: 9.5px;
+            border: 2px solid $black;
+            background-color: $white;
+            box-shadow: 4px 4px 0 $shadow;
+
+            &.dot-top-left {
+                top: -5px;
+                left: -5px;
+            }
+
+            &.dot-bottom-left {
+                bottom: -5px;
+                left: -5px;
+            }
+
+            &.dot-top-right {
+                top: -5px;
+                right: -5px;
+            }
+
+            &.dot-bottom-right {
+                bottom: -5px;
+                right: -5px;
+            }
+        }
+    }
+}

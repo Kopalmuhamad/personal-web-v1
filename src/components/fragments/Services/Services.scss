@@ -1,0 +1,28 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.services {
+    padding: 0 0 80px;
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    row-gap: 32px;
+
+    .services-header {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 16px;
+
+        .header-text {
+            font-size: $text-xl;
+            font-weight: $font-bold;
+            font-family: $font-grotesk;
+            text-align: start;
+            font-size: $text-lg;
+        }
+
+        .header-icon {
+            width: 64.28px;
+        }
+    }
+}
